@@ -2,17 +2,18 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    all.setName("All");
+    all.add(color.set("color", ofColor(230, 128, 190), ofColor(0, 0, 0), ofColor(255, 255, 255)));
+    all.add(number.set("number", 5, 3, 20)); //for points
     lineSliders.setName("Lines");
     lineSliders.add(width.set("width", 0.5, 0.5, 5));
     pointSliders.setName("Points");
-    pointSliders.add(radius.set("radius", 1, 10, 15)); //for points
-    pointSliders.add(number.set("number", 5, 3, 20)); //for points
-    colors.setName("Colors");
-    colors.add(color.set("R,G,B", ofColor(100, 130, 160), ofColor(0, 0, 0), ofColor(255, 255, 255)));
-    mainGroup.add(colors);
+    pointSliders.add(radius.set("radius", 5, 5, 15)); //for points
+    mainGroup.add(all);
     mainGroup.add(lineSliders);
     mainGroup.add(pointSliders);
     gui.setup(mainGroup);
+    cnt = 0;
 }
 
 //--------------------------------------------------------------
@@ -38,7 +39,12 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    //to take a screenshot
+    if (key == ' '){
+        imageScreenshot.grabScreen(0, 0, ofGetWidth(), ofGetHeight());
+        imageScreenshot.save("screenshot" + ofToString(cnt) + ".png");
+        cnt ++;
+    }
 }
 
 //--------------------------------------------------------------

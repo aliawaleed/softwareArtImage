@@ -22,18 +22,23 @@ class ofApp : public ofBaseApp{
         void dragEvent(ofDragInfo dragInfo);
         void gotMessage(ofMessage msg);
   
-    ofxPanel gui;
+        // For screenshot
+        ofImage imageScreenshot;
+        int cnt;
     
-    ofParameterGroup colors;
-    ofParameter<ofColor> color;
-  
-    ofParameterGroup lineSliders;
-    ofParameter<float> width;
-    
-    ofParameterGroup pointSliders;
-    ofParameter<int> radius;
-    ofParameter<int> number;
-  
-  ofParameterGroup mainGroup;
+        // For panel/sliders
+        ofxPanel gui;
+        
+        ofParameterGroup all;
+        ofParameter<ofColor> color;
+        ofParameter<int> number;
+      
+        ofParameterGroup lineSliders;
+        ofParameter<float> width;
+        
+        ofParameterGroup pointSliders;
+        ofParameter<int> radius;
+      
+        ofParameterGroup mainGroup;
         
 };
