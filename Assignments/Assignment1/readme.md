@@ -21,10 +21,10 @@ This was finally followed by the gui.draw() function and I added a few lines to 
 
 ## Sample Output 
 This is the initial screen.
-![The first image](/images/screenshot0.png)
+![The first image](/Assignments/Assignment1/images/screenshot0.png)
 
 Here I played around with the sliders, changed the points' radius and lines' width, and increased the number of lines and circles.
-![The second image](/images/screenshot4.png)
+![The second image](/Assignments/Assignment1/images/screenshot4.png)
 
 And here I added even more lines.
-![The third image](/images/screenshot3.png)
+![The third image](/Assignments/Assignment1/images/screenshot3.png)
