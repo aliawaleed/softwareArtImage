@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<group>
+	<Colors>
+		<R_G_B>160, 56, 131, 255</R_G_B>
+	</Colors>
+	<Lines>
+		<width>0.5</width>
+	</Lines>
+	<Points>
+		<radius>11</radius>
+		<number>11</number>
+	</Points>
+</group>
