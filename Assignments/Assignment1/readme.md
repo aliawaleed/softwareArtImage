@@ -1,4 +1,4 @@
-# STILL
+# Assignment 1: STILL
 
 ## Description
 For this assignment, we made thematic images consisting of shapes that can be controlled by sliders. There are 3 themes that the user can choose from that are meant to be consonant; forest, ocean, and desert. 
