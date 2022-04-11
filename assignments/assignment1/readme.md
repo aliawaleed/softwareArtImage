@@ -1,7 +1,7 @@
 # Assignment 1: STILL
 
 ## Description
-For this assignment, we made thematic images consisting of shapes that can be controlled by sliders. There are 3 themes that the user can choose from that are meant to be consonant; forest, ocean, and desert.
+For this assignment, we made a series of thematic images consisting of shapes that can be controlled by sliders. The users can control the shapes by pressing on the space bar, alternating between circles, squares, and triangles. They can also decide on the theme using the sliders, all of which are meant to be consonant. The themes are: forest, ocean, and desert.
 
 ## Algorithm
 The first thing we did was, in the header file, initialize the gui as well as the parameter groups and specific parameters that we want to have displayed. We then initialized arrays for the themes and *shapes* for the shapes. Next, in the app file, we added the categories to their groups based on what they control, whether it's the theme or the shapes, assigning the starting values as well as the ranges for each of the controlled categories.
@@ -32,19 +32,16 @@ for (int i = 0; i < nShapes; i++){
 This was made to restart the starting color from the array after 5 shapes are drawn. *shapes*. This was finally followed by the `gui.draw()` function and we added a few lines to take screenshots when the `'s'` *key* is pressed and ran the code.
 
 ## Sample Output
-This is the initial screen.
-![The first image](./bin/data/screenshot0.png)
+### The Forest Theme
+Circles                    |          Squares          |  Triangles
+:-------------------------:|:-------------------------:|:-------------------------:
+![forest circles](./images/screenshot0.png)  |  ![forest squares](./images/screenshot1.png)|  ![forest triangles](./images/screenshot2.png)
 
-Here, we changed the shape to triangles
-![The second image](./bin/data/screenshot1.png)
+### The Ocean Theme
+![ocean circles](./images/screenshot3.png)
 
-Here, we changed the shape to rectangles
-![The third image](./bin/data/screenshot2.png)
-
-and here are the 3 different color palettes we chose
-![The fourth image](./bin/data/screenshot3.png)
-![The fifth image](./bin/data/screenshot4.png)
-![The sixth image](./bin/data/screenshot5.png)
+### The Desert Theme
+![desert triangles](./images/screenshot4.png)
 
 ## Evaluation
 We are both overall satisfied with our output. The end result is something we both really liked specially because the theme of shapes and colors were both really relaxing to look at.
