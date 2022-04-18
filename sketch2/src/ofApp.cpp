@@ -33,24 +33,16 @@ void ofApp::update(){
         drawBgColor = firstBgColor;
                 
     } else if (animationTime < secondChangeTime) {
-        // How many seconds since the start of the change?
         float timeSinceFirst = animationTime - firstChangeTime;
-        
-        // How far (as a percentage) are we to the next change?
         float percentageToSecond = timeSinceFirst / (secondChangeTime - firstChangeTime);
         
+        // transition into color
         drawBgColor = firstBgColor.getLerped(secondBgColor, percentageToSecond);
         
     } else if (animationTime < thirdChangeTime) {
-        // How many seconds since the start of the change?
         float timeSinceSecond = animationTime - secondChangeTime;
-        
-        // How far (as a percentage) are we to the next change?
         float percentageToThird = timeSinceSecond / (thirdChangeTime - secondChangeTime);
-        
-        // Interpolate the color based on the percentage through the animation
-        drawBgColor = secondBgColor.getLerped(ofColor(0,28,124), percentageToThird);
-        
+        drawBgColor = secondBgColor.getLerped(firstBgColor, percentageToThird);
     }
 }
 
