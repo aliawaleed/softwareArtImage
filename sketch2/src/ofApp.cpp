@@ -57,9 +57,9 @@ void ofApp::draw(){
         posX = -100;
         posY = (ofGetHeight()/4)*3;
         // add the elapsed time to the initial start times
-        firstChangeTime += cnt*ofGetElapsedTimef();
-        secondChangeTime += cnt*ofGetElapsedTimef();
-        thirdChangeTime += cnt*ofGetElapsedTimef();
+        firstChangeTime += ofGetElapsedTimef()/cnt;
+        secondChangeTime += ofGetElapsedTimef()/cnt;
+        thirdChangeTime += ofGetElapsedTimef()/cnt;
         //initial sun r,g,b
         r = 242;
         g = 232;
