@@ -7,3 +7,5 @@
 [Sketch 2](https://github.com/aliawaleed/softwareArtImage/tree/main/sketch2): Cyclical Animation (Sunset/Sunrise)
 
 [Assignment 2](https://github.com/aliawaleed/softwareArtImage/tree/main/assignments/assignment2): Motion
+
+[Final](https://github.com/aliawaleed/softwareArtImage/tree/main/final)
